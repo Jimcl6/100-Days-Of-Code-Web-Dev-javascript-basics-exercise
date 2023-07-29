@@ -28,9 +28,10 @@ let coursePrice = 3990
 let userMainGoals = ['Get better pay', 'Achieve the dream lifestyle', 'Remote work'];
 
 // 2 Output ("alert") the three variable values
-alert(`Chosen course: ${courseChoice}.`);
-alert(`Price of course: ${coursePrice}.`);
-alert(`Main Goals: ${userMainGoals}.`);
+
+// alert(`Chosen course: ${courseChoice}.`);
+// alert(`Price of course: ${coursePrice}.`);
+// alert(`Main Goals: ${userMainGoals}.`);
 
 // 3 Group the three variables together and still output their values together.
 
@@ -49,16 +50,17 @@ alert(`User Goals: ${onlineCourse.goals[0]}, ${onlineCourse.goals[1]}, ${onlineC
 alert(`Goal Highlight: ${onlineCourse.goals[1]}`)
 
 // 5. Create a custom command that does the following:
+//    - Use your "main goals" variable and access an element by its identifier
+//    - The concrete identifier value should be dynamic / flexible
+//      (i.e. the command can be executed for different identifier)
+//    - The "main goals" variable should also be dynamic: The command should work
+//      with ANY list of values
+//    - The custom command shou
 function getListItem(array, arrayIndex) {
-    //    - Use your "main goals" variable and access an element by its identifier
-    //    - The concrete identifier value should be dynamic / flexible
-    //      (i.e. the command can be executed for different identifier)
-    //    - The "main goals" variable should also be dynamic: The command should work
-    //      with ANY list of values
     let arrayElement = array[arrayIndex];
-    //    - The custom command should provide the accessed value (i.e. the list element)
     return arrayElement;
 }
+
 
 // 6) Execute your custom command from (5) and output ("alert") the result
 let firstElement = getListItem(userMainGoals, 0);
